@@ -1,0 +1,10 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+pre.prettyprint{
+	border: none;
+}
+ol.linenums{
+	margin: 0px;
+}

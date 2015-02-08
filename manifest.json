@@ -1,0 +1,21 @@
+{
+   "manifest_version": 2,
+   "name": "JavascriptViewer",
+   "description": "Validate and view javascript documents",
+   "version": "0.1",
+   "content_scripts": [ {
+      "js": [
+		  "run_prettify.js",
+		  "jsformat.js",
+		  "content.js"
+	  ],
+      "matches": [ "http://*/*.js", "https://*/*.js", "ftp://*/*.js"],
+      "run_at": "document_end"
+   } ],
+   "icons": {
+   },
+   "permissions": [ "http://*/", "contextMenus", "https://*/", "ftp://*/" ],
+   "web_accessible_resources": [
+	   "/*.css"
+	]
+}
